@@ -30,6 +30,7 @@ Include:
 - created / updated files
 - one or two lines on why each file exists
 - verification notes
+- any tool-specific deltas between same-path sibling files, with justification
 - unresolved assumptions or TODOs
 
 ## 5. Quality bar
@@ -41,3 +42,4 @@ Before finishing, confirm:
 - no unnecessary tool families were added
 - no single file exceeds ~200 lines or ~6 KB (compress or split if it does)
 - content language matches the user's language preference (if specified)
+- same-path sibling files are identical unless a justified tool-specific delta is reported

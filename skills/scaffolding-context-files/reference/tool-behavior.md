@@ -66,12 +66,13 @@ Relevant facts:
 
 Good default:
 - if the repo already standardizes on one family, do not add extra families unless asked
-- if the team explicitly wants multi-agent compatibility, keep the root files semantically aligned
+- if the team explicitly wants multi-agent compatibility, keep same-path sibling files identical by default
 
 ## Multi-tool generation rule
 
 When generating for multiple tools:
-- keep meaning aligned
-- adapt to discovery behavior
-- do not paste huge identical blobs into every family unless the user explicitly wants that
-- prefer small, tool-aware entry files plus nested local files where the boundaries are real
+- choose the same boundaries and file tree for every requested family
+- write one canonical file for each boundary, then copy it to sibling families before making any edits
+- keep same-path sibling files identical unless a real tool behavior requires a delta
+- adapt to discovery behavior through filenames, placement, nesting, and loading strategy before changing the text itself
+- if a tool-specific delta is necessary, keep it minimal and document why it exists

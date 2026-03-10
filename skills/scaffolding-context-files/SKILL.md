@@ -86,6 +86,7 @@ Use only what is needed:
 - If the user explicitly requests `CLAUDE.md`, `AGENTS.md`, and `GEMINI.md`, generate all requested families.
 - Otherwise, generate only the family or families clearly relevant to the repo's tool usage.
 - For Codex-style nested guidance, default to `AGENTS.md`. Use `AGENTS.override.md` only when same-directory override semantics are intentionally needed.
+- If multiple families are generated for the same boundary, treat them as sibling files that should start from the same base content.
 
 ### 4. Write or update files
 Use:
@@ -102,7 +103,9 @@ Authoring rules:
 - Keep files skimmable with short sections and concrete bullets.
 - Prefer commands, paths, and checks over vague advice.
 - Put local rules in local files. Do not restate them in the root unless truly global.
-- If you create multiple tool-specific files with near-identical meaning, keep them semantically aligned but adapt to each tool's discovery model.
+- If you create multiple tool-specific files for the same boundary, write one canonical version first, copy it to the sibling families, and only then apply the smallest necessary tool-specific edits.
+- Default to identical sibling files at the same path. Allow differences only when a real tool or agent behavior requires them.
+- Prefer adapting multi-tool support through file placement, nesting, and discovery strategy rather than rewriting the substance of the instructions.
 
 ### 5. Compress oversized files
 
@@ -124,6 +127,7 @@ Check each file against this rubric:
 - no contradictory instructions between parent and child
 - no invented commands
 - file existence is justified by a real boundary
+- same-path sibling files (`CLAUDE.md`, `AGENTS.md`, `GEMINI.md`) are identical unless a tool-specific delta is explicitly justified
 
 ### 7. Report the result
 Your final output must include:

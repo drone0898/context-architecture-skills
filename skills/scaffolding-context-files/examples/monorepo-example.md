@@ -40,6 +40,9 @@ repo/
     └── ui/
 ```
 
+If all three families are generated for the same boundary, the matching files should start from identical content.
+Only keep a tool-specific delta when the tool's behavior genuinely requires it.
+
 ## What belongs at the root
 
 - repo-wide build/test/lint map
@@ -80,3 +83,4 @@ If the team only uses one family, create only that family:
 - Gemini-only → just `GEMINI.md`
 
 Only generate all three families when the user explicitly wants multi-agent compatibility or the repo clearly uses multiple tools.
+When you do, keep matching files at the same path identical by default.
