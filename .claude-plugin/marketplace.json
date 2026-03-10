@@ -1,0 +1,33 @@
+{
+  "name": "context-architecture-skills",
+  "id": "context-architecture-skills",
+  "owner": {
+    "name": "drone0898"
+  },
+  "metadata": {
+    "description": "Generate layered project context files for Claude Code, Codex/AGENTS.md, Gemini CLI, and multi-agent monorepos.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "context-architecture-skills",
+      "source": "./",
+      "description": "Scaffold root and nested CLAUDE.md, AGENTS.md, GEMINI.md files using context architecture principles.",
+      "version": "1.0.0",
+      "author": {
+        "name": "drone0898"
+      },
+      "keywords": [
+        "context",
+        "architecture",
+        "claude",
+        "agents",
+        "gemini",
+        "codex",
+        "monorepo",
+        "workflow"
+      ],
+      "category": "workflow"
+    }
+  ]
+}

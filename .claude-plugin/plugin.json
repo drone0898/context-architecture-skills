@@ -1,0 +1,23 @@
+{
+  "name": "context-architecture-skills",
+  "description": "Generate layered CLAUDE.md, AGENTS.md, GEMINI.md, and nested instruction files for repositories and monorepos.",
+  "version": "1.0.0",
+  "author": {
+    "name": "drone0898"
+  },
+  "repository": "https://github.com/drone0898/context-architecture-skills",
+  "license": "MIT",
+  "keywords": [
+    "context",
+    "architecture",
+    "claude",
+    "agents",
+    "gemini",
+    "codex",
+    "monorepo",
+    "workflow"
+  ],
+  "skills": [
+    "./skills/scaffolding-context-files"
+  ]
+}
