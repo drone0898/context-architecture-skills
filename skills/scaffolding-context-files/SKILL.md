@@ -2,7 +2,6 @@
 name: scaffolding-context-files
 description: Designs and generates layered CLAUDE.md, AGENTS.md, GEMINI.md, and nested instruction files for repositories. Use when bootstrapping AI coding context, splitting bloated root files, or adding per-package guidance in a monorepo.
 argument-hint: "[stack notes, team boundaries, or requested file formats]"
-disable-model-invocation: true
 ---
 
 # Scaffolding Context Files
