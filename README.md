@@ -11,7 +11,7 @@ Karpathy식 작업 원칙과 “컨텍스트 아키텍처” 철학을 결합해
 /plugin install context-architecture-skills@context-architecture-skills
 
 # Usage
-/context-architecture-skills:scaffolding-context-files 한국어; CLAUDE.md 생성
+/scaffolding-context-files 한국어; CLAUDE.md 생성
 ```
 
 ## 핵심 철학
